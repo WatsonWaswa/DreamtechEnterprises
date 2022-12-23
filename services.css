@@ -1,0 +1,272 @@
+:root{
+    --headerclr:#3E424B;
+    --mainclr:#0492C2;
+    /* background blend-color : #f4f4f4; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    display: block;
+    margin-bottom: 10px;
+}
+
+section{
+    display: block;
+    margin-top: 15em;
+}
+.header{
+    padding: 2rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--headerclr);
+    z-index: 10000;
+}
+#logo{
+    color: white;
+    font-size: 30px;
+}
+#logosmall{
+    font-size: 10px;
+    color: white;
+}
+#logoimg{
+    height: 40px;
+    width: 55px;
+}
+#logotxt{
+    color: white;
+    margin-left: 0;
+}
+
+.nav a{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.nav a:hover{
+    color: var(--mainclr);
+}
+
+
+
+
+#sect-box{
+    width: 100%;
+    background-color: #e1ebe1a4;
+}
+
+#container-box{
+    width: 80%;
+    display: block;
+    margin:auto;
+    
+}
+
+#content-box{
+    float: left;
+    width: 55%;
+}
+
+#img-section{
+    float: right;
+    width: 40%;
+}
+
+#img-section img{
+    width: 100%;
+    height: auto;
+}
+
+#content-box #title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#content-box #content h3{
+    margin-top: 20px;
+    color: #0492C2;
+    font-size: 21px;
+}
+
+#content-box #content p{
+    margin-top:10px;
+    font-family: san-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#content-box #content #cont-button{
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+#content-box #content #cont-button a{
+    background-color: #0492C2;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    transition: 2s;
+}
+
+#content-box #content #cont-button a:hover{
+    background-color: rgb(61, 101, 189);
+}
+
+
+#list li{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    html{
+        font-size: 55%;
+    }
+    #menu-bar{
+        display: initial;
+    }
+    .header{
+        padding: 2rem;
+    }
+
+    .nav{
+        margin-right: 0.5px;
+       
+    }
+
+    /*
+    .nav{
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        left: 10%;
+        top: -1000%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        transition: .5s;
+    }
+
+    */
+    .nav a{
+        color: black;
+        display: block;
+        margin: 1rem;
+        font-size: 14px;
+        background-color: #65a4b9da;
+        border-radius: 10px;
+        padding: 2px;
+        text-align: center;
+    }
+
+    .nav a:hover{
+        background-color: white;
+    }
+    .search-form{
+        width: 90%;
+    }
+    .inner-back-text{
+        width: 100% !important;
+    }
+    .inner-welcome img{
+        margin-top: 20px;
+        text-align: center;
+        }
+        .chose-text{
+            padding: 1rem 2rem;
+         
+        }
+
+
+        #container-box{
+            width: 80%;
+            display: block;
+            margin:auto;
+            padding-top: 50px;
+        }
+    
+        #content-box{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+    
+    
+        #img-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+    
+        #content-box #title{
+            text-align: center;
+            font-size: 19px;
+        }
+    
+        #content-box #content #cont-button{
+            text-align: center;
+            margin-top: 15px;
+        }
+    
+        #content-box #content #cont-button a{
+            padding: 9px 30px;
+        }
+    
+        #content-box #content h3{
+            text-align: center;
+        }
+    
+
+
+
+         /* Footer */
+         #f-row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+
+        #f-col{
+            display: block;
+            width: 100%;
+        }
+}
