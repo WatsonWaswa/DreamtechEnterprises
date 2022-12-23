@@ -19,6 +19,7 @@ html{
 }
 .header{
     display: block;
+    margin-bottom: 5px;
     padding: 2rem 7%;
     position: fixed;
     left: 0;
